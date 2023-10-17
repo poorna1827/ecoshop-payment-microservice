@@ -1,0 +1,12 @@
+namespace: dev
+
+replicaCount: 1
+appName: payment
+containerName: payment
+
+serviceName: payment-service
+serviceType: ClusterIP
+
+image:
+  name: azuresolutionregistry.azurecr.io/paymentmicroservice
+  tag: {{tag}}
